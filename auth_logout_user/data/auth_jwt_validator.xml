@@ -1,0 +1,16 @@
+<odoo noupdate="1">
+
+    <record id="auth_logout_user_jwt_validator" model="auth.jwt.validator">
+        <field name="name">auth_logout_user_jwt</field>
+        <field name="audience">auth_logout_user_jwt</field>
+        <field name="issuer">theissuer</field>
+        <field name="signature_type">secret</field>
+        <field name="secret_algorithm">HS256</field>
+        <field name="secret_key">!?#logout_api_secretkey!?#</field>
+        <field name="user_id_strategy">static</field>
+        <field name="static_user_id">1</field>
+        <field name="partner_id_strategy">email</field>
+        <field name="partner_id_required" eval="False" />
+    </record>
+
+</odoo>

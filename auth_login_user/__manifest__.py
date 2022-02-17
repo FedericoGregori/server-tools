@@ -1,0 +1,27 @@
+{
+    "name": "Auth Login User",
+    "summary": "Restrict concurrent sessions, User force logout, Automatic session expiry",
+    "author": "Persiscal Consulting S.R.L.",
+    "maintainers": ["FedericoGregori"],
+    "website": "https://www.persiscalconsulting.com/",
+    "license": "AGPL-3",
+    "category": "Tools",
+    "version": "13.0.1.0.0",
+    "development_status": "Production/Stable",
+    "application": False,
+    "installable": True,
+    "external_dependencies": {
+        "python": [],
+        "bin": [],
+    },
+    "depends": ["base"],
+    "data": [
+        "data/data.xml",
+        "views/res_users_view.xml",
+        "views/templates.xml",
+    ],
+    "images": ["static/description/banner.png"],
+    "installable": True,
+    "auto_install": False,
+    "application": False,
+}
